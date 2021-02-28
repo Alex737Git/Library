@@ -1,0 +1,89 @@
+body {
+    padding-top: 5rem;
+    background-image: url("../img/library.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.starter-template {
+    padding: 1rem 1.5rem;
+    text-align: center;
+}
+
+.visitors {
+   text-align: left;
+}
+
+#emblem{
+    height: 100px;
+}
+label{
+    text-align: left;
+}
+
+/*.starter-template{
+    background: rgb(232,235,137);
+    background: radial-gradient(circle, rgba(232,235,137,1) 0%, rgba(19,34,51,0.9783263647255778) 100%);
+}*/
+
+#newBook{
+    float: right;
+}
+
+#newVisitor {
+    float: right;
+    padding: 10px;
+}
+
+#sort {
+    width: 100px;
+    padding-left: 30px;
+    border-radius: 10px;
+}
+
+#sort option {
+    width: 100px;
+    padding-left: 30px;
+}
+
+.search {
+    float: right;
+}
+
+.data {
+    margin-top: 20px;
+}
+
+.navbar-dark .navbar-nav .active>.nav-link{
+    color: gold;
+
+}
+.navbar-dark .navbar-nav .nav-link.active{
+    color:gold;
+}
+input{
+    border-radius: 10px;
+}
+
+#h1{
+    font-size: 30pt;
+    font-family: 'Akaya Telivigala', cursive;
+}
+.container{
+   /* background:white;*/
+    border-radius: 10px;
+    text-align: left;
+
+
+
+    background: rgb(255,255,255);
+    background: radial-gradient(circle, rgba(255,255,255,0.9783263647255778) 0%, rgba(238,226,97,0.8550770650056898) 100%);
+}
+h3{
+    text-align: center;
+}
+button{
+    border-radius: 10px;
+}

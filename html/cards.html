@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="icon" href="../img/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet"
+          href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css"
+          integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="../css/cards.css">
+    <link rel="stylesheet" href="../css/modalForm.css">
+    <!--Modal dialog start-->
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <title>Cards</title>
+
+
+
+
+    <!--region Modal dialog scripts-->
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <!-- endregion -->
+
+</head>
+
+
+<body>
+
+<nav class="navbar navbar-expand-md navbar-dark  fixed-top" style="background-color: black;">
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+            aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Visitors</a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link" href="books.html">Books </a>
+            </li>
+
+            <li class="nav-item active">
+                <a class="nav-link" href="cards.html">Cards</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="statistics.html">Statistics</a>
+            </li>
+
+        </ul>
+
+    </div>
+</nav>
+
+<main class="container">
+
+    <div class="container-fluid visitors">
+        <h3 style=" font-family: 'Akaya Telivigala', cursive;">All cards: </h3>
+
+    </div>
+    <hr>
+
+
+    <div >
+
+
+        <div class="row">
+
+
+            <div class="col-md-12"><button id="newCard">New card</button></div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <label for="sort">Sort by:</label>
+                <select name="sort" id="sort">
+                    <option value="id">Id</option>
+                    <option value="book">Book</option>
+                    <option value="borrowDate">Borrow Date</option>
+
+                </select>
+                <button type="button" class="btn btn-info">Sort</button>
+            </div>
+
+            <div class="col-md-6">
+                <input type="search" id="search" name="search" placeholder="Search">
+                <button id="returnList" type="button" class="btn btn-info">Full list</button>
+            </div>
+
+        </div>
+
+        <div class="cards" style="width: 99%; height: 500px; overflow-y: scroll">
+            <!--here will be a table-->
+        </div>
+
+        <!--region Card modal dialog -->
+
+
+        <div id="dialog-form" title="Create a new card">
+            <p class="validateTips">All form fields are required.</p>
+
+            <form>
+                <fieldset>
+                    <select id="user-list" class="text ui-widget-content ui-corner-all"></select>
+
+                    <select id="books-list" class="text ui-widget-content ui-corner-all"></select>
+
+
+
+
+                    <!-- Allow form submission with keyboard without duplicating the dialog button -->
+                    <input type="submit" tabindex="-1" style="position:absolute; top:-1000px">
+                </fieldset>
+            </form>
+        </div>
+
+        <!--endregion-->
+    </div>
+
+</main>
+
+
+<!--region Scripts-->
+
+<script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js"
+        integrity="sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U"
+        crossorigin="anonymous"></script>
+<script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js"
+        integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9"
+        crossorigin="anonymous"></script>
+<script>$(document).ready(function () {
+    $('body').bootstrapMaterialDesign();
+});</script>
+
+
+<script type="module" src="../js/data.js"></script>
+<script type="module" src="../js/dataSaver.js"></script>
+<script type="module" src="../js/models/book.js"></script>
+<script type="module" src="../js/models/card.js"></script>
+<script type="module" src="../js/models/user.js"></script>
+<script type="module" src="../js/models/library.js"></script>
+<script type="module" src="../js/globalVariables.js"></script>
+<script type="module" src="../js/helper.js"></script>
+
+
+
+<script type="module" src="../js/print.js"></script>
+
+<script type="module" src="../js/pages/cardsPage.js"></script>
+<!--endregion-->
+
+</body>
+</html>

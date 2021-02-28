@@ -1,0 +1,13 @@
+﻿# Default ignored files
+/shelf/
+/workspace.xml
+# Rider ignored files
+/modules.xml
+/projectSettingsUpdater.xml
+/contentModel.xml
+/.idea.final project Library.iml
+# Datasource local storage ignored files
+/../../../../../../../../:\Maverik\Programming\JavaStript\final project Library\.idea\.idea.final project Library.dir\.idea/dataSources/
+/dataSources.local.xml
+# Editor-based HTTP Client requests
+/httpRequests/

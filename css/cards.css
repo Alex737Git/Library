@@ -1,0 +1,67 @@
+body {
+    padding-top: 5rem;
+    background-image: url("../img/library.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+#newCard{
+   float: right;
+}
+input{
+    border-radius: 10px;
+}
+
+.container{
+    /*background:white;*/
+    border-radius: 10px;
+    background: rgb(255,255,255);
+    background: radial-gradient(circle, rgba(255,255,255,0.9783263647255778) 0%, rgba(238,226,97,0.8550770650056898) 100%);
+}
+
+
+.row{
+    margin-bottom: 20px;
+}
+
+#user-list,#books-list{
+    width: 200px;
+    padding: 0px 10px;
+    margin-bottom: 10px;
+}
+button{
+    border-radius: 10px;
+}
+.return_arrow{
+  /*  width: 16px;*/
+}
+hr{
+    margin:0;
+}
+
+.return{
+    background-image: url("../img/return.png");
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 25px;
+    height: 25px;
+}
+.navbar-dark .navbar-nav .active>.nav-link{
+    color:gold;
+}
+
+#sort {
+    width: 120px;
+    padding-left: 30px;
+    border-radius: 10px;
+}
+
+#sort option {
+    width: 120px;
+    padding-left: 30px;
+}
+h3{
+    text-align: center;
+}
